@@ -1,10 +1,10 @@
 {
     "name": "bl4ckp4nd4/laravel-ticket",
-    "description": "Ticketing systemc for laravel",
+    "description": "Ticketing system for laravel",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Blackpanda\\LaravelTicket\\": "src/"
+            "blackpanda\\laravel-ticket\\": "src/"
         }
     },
     "authors": [
