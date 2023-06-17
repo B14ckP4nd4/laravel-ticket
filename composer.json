@@ -4,7 +4,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "blackpanda\\laravel-ticket\\": "src/"
+            "BlackPanda\\Ticket\\": "src/"
         }
     },
     "authors": [
@@ -13,6 +13,13 @@
             "email": "46260610+B14ckP4nd4@users.noreply.github.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlackPanda\\Ticket\\TicketServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "stable"
 }
