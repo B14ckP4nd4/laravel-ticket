@@ -20,8 +20,13 @@ class TicketServiceProvider extends ServiceProvider
         ], 'laravel-ticket-migrations');
 
         $this->publishes([
-            __DIR__.'/../config/ticket.php' => config_path('courier.php'),
+            __DIR__.'/../config/ticket.php' => config_path('ticket.php'),
         ],'laravel-ticket-config');
+
+        /**
+         * load migrations
+         */
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations/');
     }
 
     /**
