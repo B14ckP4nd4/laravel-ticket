@@ -21,6 +21,7 @@ return new class extends Migration
                 ->references('id')
                 ->on('tickets');
 
+            $table->text('content');
             $table->longText('content');
             $table->longText('html')->nullable();
 
